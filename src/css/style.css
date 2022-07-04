@@ -22,18 +22,20 @@ html, body{
 }
 .user-container label{
     font-size: 20px;
-    margin-right: 10lerm;
+    margin-right: 20lerm;
     margin-left: 15px;
 }
 .user-container input{
+    font-size: 20px;
     border-radius: 3px;
     border: none;
     height: 80%;
     margin-left: 10px;
+    padding: 6px;
 }
 #person{
     float: right;
-    margin-left: 300px;
+    margin-left: 250px;
 }
 .display-container{
     flex: 12;
@@ -82,7 +84,7 @@ html, body{
     flex: 1;
 }
 .profile .user{
-    font-size: 12px;
+    font-size: 18px;
     margin-bottom: 0.3rem;
 }
 .profile .image{
@@ -97,7 +99,7 @@ html, body{
 .message{
     border-radius: 5px;
     padding: 0.5rem;
-    font-size: 12px;
+    font-size: 20px;
     margin: 0 5px;
     flex: 7;
 }
