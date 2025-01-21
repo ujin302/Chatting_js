@@ -5,14 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/kakao.css">
 </head>
 <body>
     <div class="wrapper">
         <div class="user-container">
-            <label for="nickname">닉네임</label>
-            <input type="text" id="nickname">
-            <label id="person" for="person">현재 인원: </label>
+            <div id="person">현재 인원: </div>
+            <div id="user-info">
+                <img src="" alt="" id="user-img">
+                <label for="nickname">닉네임</label>
+                <input type="text" id="nickname">
+                <select id="userimg-select">
+                    <option value="">원하는 마루를 선택하세요!</option>
+                    <option value="https://item.kakaocdn.net/do/7277796c3f7ef108040dcfde1bd2fb9c15b3f4e3c2033bfd702a321ec6eda72c">으르렁 마루</option>
+                    <option value="https://item.kakaocdn.net/do/7277796c3f7ef108040dcfde1bd2fb9c960f4ab09fe6e38bae8c63030c9b37f9">으쓱 마루</option>
+                    <option value="https://item.kakaocdn.net/do/7277796c3f7ef108040dcfde1bd2fb9cf604e7b0e6900f9ac53a43965300eb9a">삐죽 마루</option>
+                    <option value="https://item.kakaocdn.net/do/7277796c3f7ef108040dcfde1bd2fb9cb3a18fdf58bc66ec3f4b6084b7d0b570">굿 마루</option>
+                </select>
+            </div>
         </div>
         <div class="display-container">
             <!-- 채팅을 받으면 ul에 계속 넣기 -->
@@ -35,7 +46,6 @@
         </div>
     </div>
     <script src="/socket.io/socket.io.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.js" integrity="sha512-MgkNs0gNdrnOM7k+0L+wgiRc5aLgl74sJQKbIWegVIMvVGPc1+gc1L2oK9Wf/D9pq58eqIJAxOonYPVE5UwUFA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
     <script src="js/chat.js"></script>
 </body>
 </html>

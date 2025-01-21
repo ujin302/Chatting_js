@@ -23,14 +23,15 @@ io.on("connection", (socket) =>{
 
     // 모든 클라이언트에게 데이터 받음: 모든 클라 => 서버
     socket.on("chatting", (data)=>{
-        // 받은 data를  { name, msg }이런 형식으로 저장
-        const { name, msg } = data;
+        // 받은 data를  { name, msg, img }이런 형식으로 저장
+        const { name, msg, img } = data;
         console.log(data)
 
         // 서버가 클라이언트에게 정보 전달: 서버 => 클라
         io.emit("chatting", {
             name,
             msg,
+            img,
             time: moment(new Date()).format("hh:mm A")
         })
     })
